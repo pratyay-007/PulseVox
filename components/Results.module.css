@@ -1,0 +1,347 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionTitle {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-size: 18px;
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  align-self: flex-start;
+}
+
+/* 1. Coaching Summary */
+.summaryText {
+  background-color: var(--dp-color-field);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.55;
+  padding: 20px 24px;
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.summaryText strong {
+  font-weight: var(--dp-typography-display-weight);
+}
+
+/* 2. Real Speech Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.statItem {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statLabel {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-label);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--dp-color-ink);
+  padding-bottom: 4px;
+}
+
+.statValue {
+  color: var(--dp-color-ink);
+  font-size: clamp(26px, 3.5vw, 36px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.statNote {
+  color: #444444;
+  font-size: var(--dp-typography-metadata);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.35;
+}
+
+/* 3. Transcript Box & Flagged Spans */
+.transcriptBox {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.65;
+  padding: 24px 28px;
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 6px 6px 0px #000000;
+  white-space: pre-wrap;
+}
+
+.flaggedPhrase {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  border-bottom: 2px solid var(--dp-color-ink);
+  padding: 1px 4px;
+  font-weight: var(--dp-typography-emphasis-weight);
+}
+
+.flagMarker {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  font-size: 11px;
+  font-weight: var(--dp-typography-display-weight);
+  padding: 1px 4px;
+  border: 1px solid var(--dp-color-ink);
+  box-shadow: 1px 1px 0px #000000;
+  vertical-align: super;
+  margin-right: 4px;
+  user-select: none;
+}
+
+/* 4. Corrections List */
+.correctionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.correctionRow {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 18px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.correctionIndex {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-size: 14px;
+  font-weight: var(--dp-typography-display-weight);
+  padding: 4px 8px;
+  border: 2px solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  flex-shrink: 0;
+}
+
+.correctionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.originalText {
+  color: var(--dp-color-signal);
+  text-decoration: line-through;
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+}
+
+.improvedText {
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: var(--dp-typography-body);
+  letter-spacing: -0.02em;
+}
+
+.reasonText {
+  color: #333333;
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.45;
+  border-top: 1px dashed #000000;
+  padding-top: 6px;
+}
+
+/* 5. Structure & Poise */
+.structureGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.structureRow {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.structureLabel {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-label);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--dp-color-ink);
+  padding-bottom: 2px;
+}
+
+.structureDesc {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.45;
+}
+
+/* 6. Concrete Next Steps */
+.nextStepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepRow {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 16px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.stepNum {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-size: 16px;
+  font-weight: var(--dp-typography-display-weight);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  flex-shrink: 0;
+}
+
+.stepText {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.45;
+}
+
+/* 7. Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--dp-spacing-gap);
+  padding-top: 12px;
+  border-top: var(--dp-border-panel) solid var(--dp-color-ink);
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  padding: 12px 28px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.primaryBtn:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: #ffe600;
+}
+
+.primaryBtn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+.primaryBtn:disabled {
+  background-color: #e5dec9;
+  color: #777777;
+  border: var(--dp-border-annotation) solid #777777;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.primaryBtn:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.historyLink {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  padding: 12px 24px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.historyLink:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: var(--dp-color-ground);
+}
+
+.historyLink:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+.historyLink:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.limitMessage {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 8px 14px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1050px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

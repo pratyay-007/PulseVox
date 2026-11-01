@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dp-spacing-gap);
+  width: 100%;
+}
+
+.topicSnippet {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topicTitle {
+  color: var(--dp-color-ink);
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.topicMeta {
+  background-color: var(--dp-color-field);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 4px 10px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+
+.timersList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.timerRow {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timerLabelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timerLabel {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.timerValue {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-size: 18px;
+  font-weight: var(--dp-typography-display-weight);
+  padding: 4px 14px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  text-transform: uppercase;
+}
+
+.rangeInput {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 14px;
+  background: var(--dp-color-ground);
+  outline: none;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: var(--dp-color-emphasis);
+  cursor: pointer;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.rangeInput::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: var(--dp-color-emphasis);
+  cursor: pointer;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.rangeInput:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.summaryLine {
+  background-color: var(--dp-color-field);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.5;
+  padding: 16px 20px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.devBadge {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  font-size: var(--dp-typography-label);
+  font-weight: var(--dp-typography-display-weight);
+  padding: 4px 8px;
+  border: 2px solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--dp-spacing-gap);
+  padding-top: 8px;
+}
+
+.primaryBtn {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  padding: 12px 28px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.primaryBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: #ffe600;
+}
+
+.primaryBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+.primaryBtn:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}

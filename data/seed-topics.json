@@ -1,0 +1,802 @@
+[
+  {
+    "id": "seed-ca-01",
+    "genre": "current-affairs",
+    "type": "opinion",
+    "title": "How global climate agreements affect developing economies",
+    "hints": ["What trade-offs do developing nations face between rapid industrial growth and clean energy?", "Should wealthier historical polluters fund green transitions elsewhere?", "What is one realistic policy that balances both needs?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-ca-02",
+    "genre": "current-affairs",
+    "type": "describe",
+    "title": "The growing shift toward renewable energy infrastructure",
+    "hints": ["Which renewable technologies (solar, wind, nuclear) are growing fastest?", "What are the biggest grid storage and reliability challenges?", "How does this transition affect local communities?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ca-03",
+    "genre": "current-affairs",
+    "type": "debate",
+    "title": "Should cities ban private passenger vehicles in central districts?",
+    "hints": ["How would commercial deliveries and disabled residents be accommodated?", "What impact would pedestrianization have on retail shops and foot traffic?", "What public transit improvements must precede any ban?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ca-04",
+    "genre": "current-affairs",
+    "type": "opinion",
+    "title": "The global impact of space exploration funding",
+    "hints": ["Can deep-space budgets be justified alongside urgent earthly problems?", "What spin-off technologies have come from aerospace investments?", "Is the rise of commercial spaceflight beneficial or concerning?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ca-05",
+    "genre": "current-affairs",
+    "type": "describe",
+    "title": "How remote work legislation is evolving worldwide",
+    "hints": ["What are 'right to disconnect' laws and why are they emerging?", "How do digital nomad visas change international taxation?", "What rights should remote workers have regarding surveillance?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-ca-06",
+    "genre": "current-affairs",
+    "type": "debate",
+    "title": "Should governments regulate deepfakes and AI-generated media before elections?",
+    "hints": ["Where is the line between political satire and dangerous disinformation?", "Can watermarking or technical standards be effectively enforced?", "Who decides what constitutes misleading political speech?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-ca-07",
+    "genre": "current-affairs",
+    "type": "opinion",
+    "title": "The role of international organizations during humanitarian crises",
+    "hints": ["What strengths and limitations have recent events highlighted?", "How can aid distribution become faster and less bureaucratic?", "Should national sovereignty ever prevent emergency food delivery?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-ca-08",
+    "genre": "current-affairs",
+    "type": "describe",
+    "title": "Changes in global supply chains after recent trade disruptions",
+    "hints": ["Why are companies shifting from 'just-in-time' to 'just-in-case' inventory?", "What is 'nearshoring' or 'friendshoring'?", "How do chip shortages highlight supply concentration vulnerabilities?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ca-09",
+    "genre": "current-affairs",
+    "type": "opinion",
+    "title": "The future of universal public healthcare systems",
+    "hints": ["How are aging populations straining hospital budgets and nursing staff?", "What role could preventive medicine and technology play in lowering costs?", "Should healthcare access ever depend on employment status?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ca-10",
+    "genre": "current-affairs",
+    "type": "describe",
+    "title": "Urban housing affordability in major metropolitan areas",
+    "hints": ["What economic forces are driving rent increases in global cities?", "How do zoning laws and construction regulations influence housing supply?", "What innovative solutions have cities implemented successfully?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-tech-01",
+    "genre": "technology",
+    "type": "opinion",
+    "title": "Will autonomous agents reshape how software is built?",
+    "hints": ["How might the role of junior developers shift over the next decade?", "What software engineering skills will remain irreducibly human?", "What are the biggest risks of relying on generated code in production?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-tech-02",
+    "genre": "technology",
+    "type": "describe",
+    "title": "How modern smartphones changed daily attention spans",
+    "hints": ["What cognitive shifts occur when information is accessible within seconds?", "How do notification systems exploit dopamine loops?", "What practical boundaries help preserve deep concentration?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-tech-03",
+    "genre": "technology",
+    "type": "debate",
+    "title": "Open-source versus proprietary AI models",
+    "hints": ["Does open-sourcing model weights democratize safety research or weaponize bad actors?", "Why are some large labs keeping architecture proprietary?", "Which model approach will win in commercial developer adoption?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-tech-04",
+    "genre": "technology",
+    "type": "opinion",
+    "title": "The promise and limits of brain-computer interfaces",
+    "hints": ["What medical breakthroughs are already showing promise for paralyzed patients?", "What privacy issues arise when neural patterns can be recorded?", "Would consumer brain interfaces deepen societal inequalities?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-tech-05",
+    "genre": "technology",
+    "type": "describe",
+    "title": "How cloud computing quietly powers modern life",
+    "hints": ["What happens behind the scenes when you stream a 4K movie or order food?", "Why are global data centers using so much electricity and water?", "What are the trade-offs of relying on three major cloud providers?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-tech-06",
+    "genre": "technology",
+    "type": "debate",
+    "title": "Should social media algorithms be legally required to be open-source?",
+    "hints": ["Would public scrutiny reduce toxic amplification and radicalization?", "Could bad actors easily game public ranking systems for spam?", "How can intellectual property rights be balanced with societal health?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-tech-07",
+    "genre": "technology",
+    "type": "opinion",
+    "title": "Quantum computing: revolutionary breakthrough or distant horizon?",
+    "hints": ["What problems can quantum computers solve that classical supercomputers never could?", "What threats does quantum decryption pose to modern cryptography?", "When can practical industry applications be reasonably expected?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-tech-08",
+    "genre": "technology",
+    "type": "describe",
+    "title": "The evolution of consumer battery technology",
+    "hints": ["Why has battery energy density improved slower than microchips?", "What advantages do solid-state batteries offer over lithium-ion?", "How does battery recycling impact the viability of electric vehicles?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-tech-09",
+    "genre": "technology",
+    "type": "opinion",
+    "title": "Is the metaverse concept dead or just early?",
+    "hints": ["Why did early virtual world platforms struggle with mainstream user retention?", "How do VR headsets and lightweight AR glasses differ in everyday utility?", "What killer use case could bring spatial computing into daily routines?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-tech-10",
+    "genre": "technology",
+    "type": "debate",
+    "title": "Should biometric surveillance in public spaces be prohibited?",
+    "hints": ["How do facial recognition systems impact personal liberty and anonymity?", "Can public safety and crime prevention justify surveillance cameras?", "What safeguard protocols or audits could prevent misuse?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-soc-01",
+    "genre": "society-culture",
+    "type": "opinion",
+    "title": "The decline of third places in modern neighborhoods",
+    "hints": ["What are 'third places' (cafes, libraries, parks, community halls) and why do they matter?", "How has digital socialization replaced physical gathering spaces?", "How can urban planners encourage spontaneous neighborly connections?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-soc-02",
+    "genre": "society-culture",
+    "type": "describe",
+    "title": "How food traditions preserve cultural identity across generations",
+    "hints": ["Why do recipes and cooking styles survive migration even when languages fade?", "How does fusion food reflect multicultural communities?", "Describe a dish from your background that carries family history."],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-soc-03",
+    "genre": "society-culture",
+    "type": "debate",
+    "title": "Has globalization homogenized local customs and languages?",
+    "hints": ["Are traditional dialects and rituals dying out under global media influence?", "Does international connectivity foster cross-cultural appreciation instead?", "How are communities reviving indigenous traditions today?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-soc-04",
+    "genre": "society-culture",
+    "type": "opinion",
+    "title": "The loneliness epidemic in highly connected societies",
+    "hints": ["Why are young adults reporting higher rates of loneliness despite social apps?", "What structural changes in work and family life contribute to isolation?", "What community initiatives have effectively rebuilt belonging?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-soc-05",
+    "genre": "society-culture",
+    "type": "describe",
+    "title": "The cultural significance of festival celebrations",
+    "hints": ["How do major seasonal holidays reinforce shared collective values?", "In what ways do festivals offer emotional release from work routines?", "How has commercialization altered traditional holiday meanings?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-soc-06",
+    "genre": "society-culture",
+    "type": "opinion",
+    "title": "Intergenerational gaps in workplace expectations",
+    "hints": ["How do attitudes toward loyalty, hours, and mental health differ by generation?", "What can experienced leaders and younger workers learn from each other?", "How can organizations bridge communication friction between age cohorts?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-soc-07",
+    "genre": "society-culture",
+    "type": "debate",
+    "title": "Should public museums repatriate historical artifacts to their countries of origin?",
+    "hints": ["What ethical obligations do former colonial institutions have today?", "Does universal museum access in major capitals benefit global scholarship?", "How can shared stewardship or modern replicas provide middle ground?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-soc-08",
+    "genre": "society-culture",
+    "type": "describe",
+    "title": "How public libraries are transforming into community technology hubs",
+    "hints": ["What resources do modern libraries provide beyond printed books?", "How do free internet and computer access reduce digital divides?", "Why do physical quiet spaces remain vital in dense cities?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-soc-09",
+    "genre": "society-culture",
+    "type": "opinion",
+    "title": "The impact of hyper-curated online aesthetics on youth identity",
+    "hints": ["How does chasing 'micro-trends' affect individuality and consumerism?", "Why do subcultures cycle much faster on short-form video feeds?", "What fosters authentic self-expression versus performative conformity?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-soc-10",
+    "genre": "society-culture",
+    "type": "describe",
+    "title": "The role of volunteering in strengthening civil society",
+    "hints": ["How does unpaid community service build trust across social divides?", "What personal benefits and skills do volunteers gain?", "How can civic engagement be encouraged among busy professionals?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-per-01",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A mistake that taught you an unforgettable lesson",
+    "hints": ["What were the circumstances leading up to the error?", "How did you react immediately after realizing what happened?", "How did this experience fundamentally change your future decision-making?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-per-02",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A time you had to step far out of your comfort zone",
+    "hints": ["What was the situation and why was it intimidating to you?", "What internal dialogue or preparation helped you take the first step?", "What surprised you most about the outcome or about yourself?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-per-03",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A mentor or teacher who changed your perspective on life",
+    "hints": ["Who was this individual and what made their teaching style distinctive?", "Can you recall a specific conversation or moment that stuck with you?", "How do you apply their guidance in your daily life today?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-per-04",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "An unexpected friendship formed in unusual circumstances",
+    "hints": ["Where did you meet and why were you both unlikely companions?", "What shared obstacle or realization brought you closer?", "What does this friendship teach about human connection?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-per-05",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A project or pursuit you failed at, and what came next",
+    "hints": ["What did you set out to achieve and why did you care so deeply about it?", "At what point did you realize it wasn't going to work out as planned?", "What hidden strengths or new directions did the setback reveal?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-per-06",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A difficult decision between two paths you wanted to take",
+    "hints": ["What were the conflicting options and what made each attractive?", "What personal values helped tip the final balance?", "Looking back, are you at peace with the road you chose?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-per-07",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A journey or trip where everything went wrong",
+    "hints": ["What unexpected mishaps occurred along the way?", "How did you manage stress or frustration in the moment?", "Why has this frustrating ordeal become a cherished memory or funny story?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-per-08",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A book, film, or speech that altered how you think",
+    "hints": ["When did you encounter this work and what state of mind were you in?", "Which specific idea or character resonated most deeply?", "What behavior or habit did you alter after finishing it?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-per-09",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A moment you had to advocate for yourself or someone else",
+    "hints": ["What unfairness or misunderstanding occurred?", "What fears did you have about speaking up?", "What was the immediate response and long-term consequence?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-per-10",
+    "genre": "personal-stories",
+    "type": "story",
+    "title": "A skill you struggled to learn before it finally clicked",
+    "hints": ["Why was this skill initially so challenging or unintuitive?", "What practice routine or breakthrough moment finally made the difference?", "What did that breakthrough teach you about patience and perseverance?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-deb-01",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Is a college degree still worth the financial investment?",
+    "hints": ["How do rising tuition debts compare to lifetime graduate earning premiums?", "In which fields can self-taught portfolios and apprenticeships replace degrees?", "What non-monetary value does university immersion provide?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-deb-02",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should homework be abolished in primary and middle schools?",
+    "hints": ["Does evening schoolwork improve academic mastery or cause family burnout?", "How does homework exacerbate inequalities for children without quiet study spaces?", "What alternative practice models have high-performing countries adopted?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-deb-03",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should voting in democratic national elections be mandatory?",
+    "hints": ["Would compulsory turnout foster civic awareness or result in uninformed ballots?", "How do nations with mandatory voting address citizen conscientious objection?", "Is abstaining from voting a legitimate form of political expression?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-deb-04",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Can economic growth be decoupled from environmental destruction?",
+    "hints": ["Can green technology allow GDP to grow indefinitely on a finite planet?", "What do advocates of 'degrowth' propose and what are their economic criticisms?", "Which sector proves that decoupling is either possible or an illusion?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-deb-05",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should governments cap executive compensation ratios relative to median workers?",
+    "hints": ["Would salary caps disincentivize top executive talent and innovation?", "Does the widening CEO-to-worker pay ratio erode company morale and trust?", "What corporate governance mechanisms could better align pay with performance?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-deb-06",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Is nuclear energy essential for achieving net-zero emissions?",
+    "hints": ["How do safety and waste management records compare with fossil fuel casualties?", "Can solar and wind grids manage baseload demand without nuclear backup?", "Are the construction timelines and costs of new plants too slow for climate targets?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-deb-07",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should space exploration be led by private corporations or public agencies?",
+    "hints": ["Does commercial competition lower launch costs faster than government programs?", "Who owns asteroid resources or governs lunar settlements under private missions?", "Can public science priorities be preserved when profit drives space ventures?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-deb-08",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should cash be completely phased out in favor of central digital currencies?",
+    "hints": ["How does cashless commerce reduce tax evasion and informal crime?", "What happens to privacy, offline reliability, and unbanked citizens without cash?", "Who controls financial transactions if a central bank controls digital ledgers?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-deb-09",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should competitive sports ban performance-enhancing genetic therapies?",
+    "hints": ["Where is the line between therapeutic recovery and unfair enhancement?", "Could genetic edits create irreversible physical divides in athletics?", "How could anti-doping bodies realistically detect targeted gene modifications?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-deb-10",
+    "genre": "debate",
+    "type": "debate",
+    "title": "Should public transit be funded entirely through taxes and free at the point of use?",
+    "hints": ["Would zero fares significantly reduce city traffic congestion and emissions?", "How would lost farebox revenue be made up without reducing maintenance quality?", "Does free transit disproportionately benefit urban commuters over rural taxpayers?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-car-01",
+    "genre": "career-education",
+    "type": "opinion",
+    "title": "The importance of soft skills versus technical expertise",
+    "hints": ["Why do technically brilliant individuals sometimes fail to advance into leadership?", "How do listening, clarity, and empathy influence project success?", "Can interpersonal communication be taught systematically or only through experience?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-car-02",
+    "genre": "career-education",
+    "type": "describe",
+    "title": "How to structure an effective job search in a competitive market",
+    "hints": ["Why do generic resume submissions yield low response rates?", "How does building genuine professional networks differ from transactional outreach?", "What role do personal projects and case studies play in interviews?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-car-03",
+    "genre": "career-education",
+    "type": "opinion",
+    "title": "The balance between career specialization and generalization",
+    "hints": ["What are the advantages of being a 'T-shaped' professional?", "When is deep niche mastery more valuable than broad multidisciplinary curiosity?", "How does career adaptability protect against industry disruption?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-car-04",
+    "genre": "career-education",
+    "type": "describe",
+    "title": "How self-directed learning is changing higher education",
+    "hints": ["What makes online courses and developer communities effective?", "Why do many learners struggle with motivation when formal deadlines vanish?", "How can self-taught learners demonstrate credibility to hiring managers?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-car-05",
+    "genre": "career-education",
+    "type": "opinion",
+    "title": "How to handle constructive criticism and negative feedback at work",
+    "hints": ["Why is our instinctive reaction to professional critique often defensive?", "How can you separate emotional sting from actionable improvement notes?", "What is an example of feedback that stung at first but accelerated your growth?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-car-06",
+    "genre": "career-education",
+    "type": "debate",
+    "title": "Should internships always be legally required to pay minimum wage?",
+    "hints": ["Does unpaid work restrict career entry exclusively to wealthy families?", "Do small non-profits and startups lose the ability to mentor eager students?", "What constitutes genuine education versus disguised labor exploitation?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-car-07",
+    "genre": "career-education",
+    "type": "opinion",
+    "title": "The myth and reality of work-life balance",
+    "hints": ["Is balance a steady daily equation or seasonal ebb and flow?", "What boundaries must individuals set when work follows them on personal devices?", "How do supportive managers differ from burnout-driven work cultures?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-car-08",
+    "genre": "career-education",
+    "type": "describe",
+    "title": "How mentoring relationships benefit both parties",
+    "hints": ["What does a mentee gain beyond tactical advice?", "How does reverse mentorship expose senior leaders to emerging technologies?", "What makes a mentorship successful and sustainable over years?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-car-09",
+    "genre": "career-education",
+    "type": "opinion",
+    "title": "Overcoming imposter syndrome in early-career roles",
+    "hints": ["Why do capable high achievers frequently doubt their own qualifications?", "How does comparing your inside doubts with others' external confidence mislead you?", "What practices help build internal proof of competence?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-car-10",
+    "genre": "career-education",
+    "type": "describe",
+    "title": "The role of vocational and trade apprenticeships",
+    "hints": ["Why are skilled trades experiencing critical labor shortages globally?", "How does learning on the job with zero debt compare with conventional degrees?", "How can society elevate the social prestige of essential craft professions?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-hea-01",
+    "genre": "health-sports-lifestyle",
+    "type": "opinion",
+    "title": "The impact of chronic sleep deprivation on decision-making",
+    "hints": ["How does lack of REM sleep impair emotional regulation and risk assessment?", "Why has modern culture historically glorified working on minimal sleep?", "What evidence-based sleep hygiene habits produce the greatest return?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-hea-02",
+    "genre": "health-sports-lifestyle",
+    "type": "describe",
+    "title": "How regular physical movement supports mental clarity",
+    "hints": ["What neurochemical changes occur during aerobic and resistance exercise?", "How does physical exertion help break rumination and stress cycles?", "Why is consistency more impactful than extreme occasional workouts?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-hea-03",
+    "genre": "health-sports-lifestyle",
+    "type": "debate",
+    "title": "Should ultra-processed foods carry mandatory warning labels like cigarettes?",
+    "hints": ["How do engineered combinations of fat, salt, and sugar override satiety?", "Would graphic front-of-package warnings reduce obesity and type 2 diabetes?", "Is consumer dietary choice a personal responsibility or a public health concern?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-hea-04",
+    "genre": "health-sports-lifestyle",
+    "type": "opinion",
+    "title": "The rise of wellness culture: genuine health or commercial industry?",
+    "hints": ["How do unproven supplements and detox routines exploit health anxieties?", "What basic health pillars (sleep, nutrition, walking) get overshadowed by products?", "How can consumers distinguish scientific medicine from lifestyle marketing?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-hea-05",
+    "genre": "health-sports-lifestyle",
+    "type": "describe",
+    "title": "The mental and physical benefits of outdoor nature immersion",
+    "hints": ["What is 'forest bathing' and what measurable stress reductions does it show?", "How does visual contact with natural greenery reduce mental fatigue?", "How can residents of concrete urban centers integrate nature into daily routines?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-hea-06",
+    "genre": "health-sports-lifestyle",
+    "type": "opinion",
+    "title": "Why sports rivalries capture the human imagination",
+    "hints": ["What psychological need for tribal belonging do sports clubs fulfill?", "How do legendary rivalries bring out both athletic greatness and toxic hostility?", "What is an iconic sporting matchup that illustrates this intensity?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-hea-07",
+    "genre": "health-sports-lifestyle",
+    "type": "debate",
+    "title": "Should contact sports alter rules to eliminate head trauma risks?",
+    "hints": ["What does medical research on CTE reveal about repeated concussive impacts?", "How can sports like boxing, rugby, or American football preserve their appeal while protecting players?", "At what age should children be permitted to participate in full-contact leagues?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-hea-08",
+    "genre": "health-sports-lifestyle",
+    "type": "describe",
+    "title": "The importance of mindfulness and breathing techniques in stress reduction",
+    "hints": ["How does deliberate slow breathing stimulate the parasympathetic nervous system?", "Why do brief mental pauses prevent emotional reactivity throughout the day?", "What is a simple breathing technique you can use before a high-pressure talk?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-hea-09",
+    "genre": "health-sports-lifestyle",
+    "type": "opinion",
+    "title": "How wearable fitness trackers affect our relationship with our bodies",
+    "hints": ["Does tracking step counts and heart rate variability motivate healthy habits?", "When does obsessive biometrics tracking create unnecessary anxiety?", "Can algorithms know our readiness to rest better than internal intuitive signals?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-hea-10",
+    "genre": "health-sports-lifestyle",
+    "type": "describe",
+    "title": "The social and emotional benefits of team recreational sports",
+    "hints": ["How does playing casual sports build camaraderie among adult players?", "What does navigating shared wins and defeats teach about group trust?", "Why is team play an effective antidote to modern sedentary isolation?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-ent-01",
+    "genre": "entertainment",
+    "type": "opinion",
+    "title": "The impact of streaming algorithms on musical variety",
+    "hints": ["Are recommendation engines homogenizing musical hooks to avoid skips?", "Has the album format been replaced by single-track playlist culture?", "How do independent artists find loyal niches outside mainstream algorithmic push?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ent-02",
+    "genre": "entertainment",
+    "type": "describe",
+    "title": "How video games have evolved into sophisticated storytelling media",
+    "hints": ["How does player agency make interactive narratives uniquely emotional?", "What narrative techniques do games borrow from cinema and literature?", "Cite an example of a game that tackled complex moral questions."],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-ent-03",
+    "genre": "entertainment",
+    "type": "debate",
+    "title": "Will generative AI destroy artistic careers in cinema and animation?",
+    "hints": ["Can automated video tools lower production budgets for independent creators?", "What happens to concept artists, voice actors, and background animators?", "Does art require human lived experience to truly move an audience?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-ent-04",
+    "genre": "entertainment",
+    "type": "opinion",
+    "title": "Why true crime documentaries have become a cultural obsession",
+    "hints": ["What psychological morbid curiosity drives audiences to investigate real murders?", "Does the genre exploit victims and their grieving families for entertainment?", "Why do women make up a disproportionate share of true crime viewership?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ent-05",
+    "genre": "entertainment",
+    "type": "describe",
+    "title": "The experience of attending a live music concert versus digital streaming",
+    "hints": ["What physical sensations and communal energy cannot be captured digitally?", "How do shared acoustics and artist improvisation transform familiar songs?", "Why are fans willing to pay premium ticket prices for live experiences?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-ent-06",
+    "genre": "entertainment",
+    "type": "opinion",
+    "title": "The endless nostalgia wave in Hollywood reboots and sequels",
+    "hints": ["Why do studio executives prefer known intellectual property over original scripts?", "Does reliance on nostalgia signal creative exhaustion or safe financial risk management?", "What is a recent remake that actually justified its existence?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-ent-07",
+    "genre": "entertainment",
+    "type": "debate",
+    "title": "Should spoiler warnings be an ethical courtesy or personal responsibility?",
+    "hints": ["How does knowing plot twists beforehand change the emotional impact of a story?", "In an era of instant global releases, how long should spoiler curfews last?", "Is the anger surrounding plot leaks overblown in modern media fandoms?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-ent-08",
+    "genre": "entertainment",
+    "type": "describe",
+    "title": "The role of satire in holding power accountable",
+    "hints": ["How do satirical shows and editorial cartoons deliver harsh political truths?", "Why is humor often more effective than standard investigative journalism?", "Can political satire backfire by making critical issues feel trivial?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ent-09",
+    "genre": "entertainment",
+    "type": "opinion",
+    "title": "The enduring appeal of the hero's journey in myth and cinema",
+    "hints": ["Why does Joseph Campbell's monomyth formula resonate across every civilization?", "How do stories like Star Wars, Harry Potter, or Lord of the Rings reuse this archetype?", "Can modern narratives succeed while subverting the traditional heroic arc?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-ent-10",
+    "genre": "entertainment",
+    "type": "describe",
+    "title": "The emergence of long-form podcasts as cultural touchstones",
+    "hints": ["Why do millions prefer three-hour conversational dialogues over concise news clips?", "How does unscripted intimacy build intense listener loyalty?", "What influence do podcast interviewers now hold compared to traditional journalists?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-eth-01",
+    "genre": "ethics-scenarios",
+    "type": "opinion",
+    "title": "The ethics of AI in criminal sentencing and parole decisions",
+    "hints": ["Can predictive algorithms ever be free from historical racial and class biases?", "Does replacing human judicial discretion with code protect or undermine justice?", "Should defendants have an absolute right to an explanation from a human judge?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-eth-02",
+    "genre": "ethics-scenarios",
+    "type": "debate",
+    "title": "The trolley problem in autonomous vehicle programming",
+    "hints": ["How should a self-driving vehicle prioritize between passenger safety and pedestrian lives?", "Should ethical parameters in vehicle software be set by engineers, regulators, or buyers?", "Is programming moral choices into machines fundamentally different from human split-second reactions?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-eth-03",
+    "genre": "ethics-scenarios",
+    "type": "opinion",
+    "title": "Whistleblowing: betrayal of an employer or duty to the public?",
+    "hints": ["Under what conditions does moral obligation to society override non-disclosure agreements?", "What severe personal and legal retaliations do whistleblowers typically suffer?", "How can institutions create secure internal escalation paths before leaks occur?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-eth-04",
+    "genre": "ethics-scenarios",
+    "type": "debate",
+    "title": "Should parents be allowed to select genetic traits for unborn children?",
+    "hints": ["Where is the boundary between preventing severe hereditary diseases and selecting cosmetic enhancements?", "Would commercial genetic tailoring create biological caste divisions in society?", "How can global bioethics accords regulate gene-editing clinics?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-eth-05",
+    "genre": "ethics-scenarios",
+    "type": "opinion",
+    "title": "The ethics of targeted advertising directed at children",
+    "hints": ["Are developing minds capable of understanding persuasive commercial intent?", "How does algorithmic influencer marketing exploit young viewer trust?", "Should digital platforms completely ban targeted profiling for minors?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-eth-06",
+    "genre": "ethics-scenarios",
+    "type": "describe",
+    "title": "A moral dilemma where doing the right thing caused personal loss",
+    "hints": ["What were the conflicting loyalties or principles in this scenario?", "What would have happened if the compromise or easy route was chosen?", "What enduring self-respect comes from upholding your core ethics?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-eth-07",
+    "genre": "ethics-scenarios",
+    "type": "debate",
+    "title": "Should historical figures with flawed personal lives be removed from public monuments?",
+    "hints": ["Does contextualizing a statue with informative plaques work better than removal?", "How should society weigh monumental contributions against severe moral failings?", "Who should make decisions about city street names and public memorials?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-eth-08",
+    "genre": "ethics-scenarios",
+    "type": "opinion",
+    "title": "The ethics of wildlife conservation through managed hunting",
+    "hints": ["Can high-fee permits genuinely finance habitat preservation and anti-poaching squads?", "Is it morally defensible to sacrifice individual animals for species survival?", "What alternative revenue models can protect African safari ecosystems?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-eth-09",
+    "genre": "ethics-scenarios",
+    "type": "opinion",
+    "title": "Do wealthy individuals have a moral obligation to donate surplus wealth?",
+    "hints": ["Is philanthropy a moral duty or a private prerogative after paying legal taxes?", "How does major philanthropic funding give unelected billionaires outsized political sway?", "What is the philosophy behind the Giving Pledge and effective altruism?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-eth-10",
+    "genre": "ethics-scenarios",
+    "type": "debate",
+    "title": "Should social media companies be liable for user-generated harm on their platforms?",
+    "hints": ["Are tech platforms neutral utility conduits like telecom networks or curated publishers?", "How would removing liability protections (like Section 230) impact free online speech?", "How can platforms be held accountable without encouraging automated mass censorship?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-bus-01",
+    "genre": "business-money",
+    "type": "opinion",
+    "title": "Why financial literacy should be taught in every secondary school",
+    "hints": ["What costly mistakes do young adults make with credit cards and payday loans?", "How does an understanding of compound interest transform lifelong retirement savings?", "Why do many school curriculums still omit budgeting, taxes, and investing basics?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-bus-02",
+    "genre": "business-money",
+    "type": "describe",
+    "title": "The psychology of money: why emotions override rational math",
+    "hints": ["How do fear and greed trigger irrational investment decisions during market swings?", "How does social comparison fuel lifestyle inflation as incomes rise?", "What behavioral rules protect people from impulsive financial errors?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-bus-03",
+    "genre": "business-money",
+    "type": "debate",
+    "title": "Is bootstrap entrepreneurship superior to venture capital funding?",
+    "hints": ["What autonomy and ownership advantages do founders keep when bootstrapping?", "When is venture capital necessary to capture winner-take-all network effects?", "Why do high-growth venture-backed startups fail at such high rates?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-bus-04",
+    "genre": "business-money",
+    "type": "opinion",
+    "title": "The impact of subscription business models on consumer habits",
+    "hints": ["Why have businesses converted from one-time purchases to perpetual monthly subscriptions?", "How does subscription fatigue affect personal budgeting?", "What rights should consumers have regarding easy one-click cancellations?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-bus-05",
+    "genre": "business-money",
+    "type": "describe",
+    "title": "How central banks use interest rates to control inflation",
+    "hints": ["What happens to borrowing costs and consumer demand when benchmark rates rise?", "Why do higher interest rates increase unemployment risks and slow housing markets?", "How do central banks walk the tightrope between inflation and recession?"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "seed-bus-06",
+    "genre": "business-money",
+    "type": "debate",
+    "title": "Should tipping culture in service industries be abolished in favor of higher wages?",
+    "hints": ["Does tipping create unpredictable, unfair income swings for restaurant staff?", "How does tipping allow employers to subsidize base payroll obligations?", "Why do customers in tip-heavy countries experience dining out stress?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-bus-07",
+    "genre": "business-money",
+    "type": "opinion",
+    "title": "The gig economy: ultimate flexibility or modern precarity?",
+    "hints": ["Why do millions choose freelance delivery and rideshare driving over formal employment?", "What protections (healthcare, pensions, paid sick leave) do independent contractors lose?", "How can labor regulations modernize without destroying scheduling flexibility?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-bus-08",
+    "genre": "business-money",
+    "type": "describe",
+    "title": "How globalization altered small business retail",
+    "hints": ["How did e-commerce giants challenge brick-and-mortar storefronts?", "How do modern small businesses leverage global niche audiences via the internet?", "Why do local specialty shops still thrive on curated customer relationships?"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "seed-bus-09",
+    "genre": "business-money",
+    "type": "opinion",
+    "title": "The ethics and economics of planned obsolescence",
+    "hints": ["Why do consumer electronic manufacturers discourage or prevent independent repairs?", "How does shortening product lifecycles drive corporate revenue while creating mountains of e-waste?", "What impact are 'Right to Repair' laws having across Europe and the US?"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "seed-bus-10",
+    "genre": "business-money",
+    "type": "debate",
+    "title": "Should corporations be judged on stakeholder welfare or shareholder value?",
+    "hints": ["What is the difference between Milton Friedman's shareholder supremacy and ESG stakeholder capitalism?", "Can companies balance employee wellbeing and environmental stewardship with profitability?", "Do corporate social responsibility initiatives often degenerate into marketing greenwash?"],
+    "difficulty": "hard"
+  }
+]

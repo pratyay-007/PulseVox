@@ -1,0 +1,220 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dp-spacing-gap);
+  width: 100%;
+}
+
+.topicSection {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topicTitle {
+  color: var(--dp-color-ink);
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hintsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 2px dashed #000000;
+  padding-top: 10px;
+}
+
+.hintItem {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+}
+
+/* Countdown Card */
+.timerSection {
+  background-color: var(--dp-color-emphasis);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 6px 6px 0px #000000;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.timerLabel {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+}
+
+.countdownDisplay {
+  color: var(--dp-color-ink);
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+/* Notes Section */
+.notesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notesLabel {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.notesTextarea {
+  width: 100%;
+  height: 130px;
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 14px 16px;
+  font-family: var(--dp-typography-face);
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.notesTextarea:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+/* Mic Section */
+.micSection {
+  background-color: var(--dp-color-field);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.micStatusRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.micStatus {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  text-transform: uppercase;
+}
+
+.micMeterRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.meterLabel {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  text-transform: uppercase;
+}
+
+.meterBar {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 16px;
+  letter-spacing: 0.15ch;
+  padding: 4px 10px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.micError {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 8px 12px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.retryMicBtn {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: var(--dp-typography-small);
+  padding: 4px 12px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.retryMicBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #000000;
+  background-color: var(--dp-color-emphasis);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--dp-spacing-gap);
+  padding-top: 8px;
+}
+
+.secondaryBtn {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  padding: 12px 28px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.secondaryBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: var(--dp-color-emphasis);
+}
+
+.secondaryBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+.secondaryBtn:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}

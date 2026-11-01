@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dp-spacing-gap);
+  width: 100%;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--dp-border-divider) solid var(--dp-color-ink);
+  padding-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.selectAllBtn {
+  background-color: var(--dp-color-ground);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-display-weight);
+  padding: 8px 16px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.selectAllBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #000000;
+  background-color: var(--dp-color-emphasis);
+}
+
+.selectAllBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.selectAllBtn:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.selectedCount {
+  background-color: var(--dp-color-field);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 6px 14px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkboxItem {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.checkboxItem:hover {
+  background-color: #fffdec;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  user-select: none;
+}
+
+.nativeCheckbox:checked + .checkboxLabel {
+  color: var(--dp-color-ink);
+}
+
+.nativeCheckbox:focus-visible + .checkboxLabel {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.genreDesc {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.4;
+  padding-left: 28px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--dp-spacing-gap);
+  padding-top: 20px;
+  border-top: var(--dp-border-divider) solid var(--dp-color-ink);
+  flex-wrap: wrap;
+}
+
+.submitBtn {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  padding: 12px 28px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: #ffe600;
+}
+
+.submitBtn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+.submitBtn:disabled {
+  background-color: #e5dec9;
+  color: #777777;
+  border: var(--dp-border-annotation) solid #777777;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.submitBtn:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.disabledHint {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 6px 12px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1050px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

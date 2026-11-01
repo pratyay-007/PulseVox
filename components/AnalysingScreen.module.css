@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dp-spacing-gap);
+  width: 100%;
+}
+
+.stagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stageRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.stageMarker {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 16px;
+  border: 2px solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  flex-shrink: 0;
+}
+
+.stageLabel {
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* Active State: Vibrant Yellow */
+.stageActive {
+  background-color: var(--dp-color-emphasis);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.stageActive .stageMarker {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+}
+
+.stageActive .stageLabel {
+  color: var(--dp-color-ink);
+}
+
+/* Done State: White Paper */
+.stageDone {
+  background-color: var(--dp-color-contrast);
+}
+
+.stageDone .stageMarker {
+  background-color: var(--dp-color-field);
+  color: var(--dp-color-ink);
+}
+
+.stageDone .stageLabel {
+  color: var(--dp-color-ink);
+}
+
+/* Pending State: Cream Paper */
+.stagePending {
+  background-color: var(--dp-color-ground);
+  opacity: 0.7;
+}
+
+.stagePending .stageMarker {
+  background-color: var(--dp-color-contrast);
+  color: #777777;
+}
+
+.stagePending .stageLabel {
+  color: #555555;
+}
+
+/* Error Box */
+.errorBox {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 6px 6px 0px #000000;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.errorMessage {
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-emphasis-weight);
+  line-height: 1.5;
+}
+
+.retryBtn {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: var(--dp-typography-small);
+  padding: 10px 22px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  align-self: flex-start;
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.retryBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #000000;
+  background-color: var(--dp-color-emphasis);
+}
+
+.retryBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.retryBtn:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}

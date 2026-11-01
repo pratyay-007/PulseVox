@@ -1,150 +1,620 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
+.container {
+  min-height: calc(100vh - 64px);
+  padding: var(--dp-spacing-gap) var(--dp-spacing-gap);
   display: flex;
-  flex: 1;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  gap: 48px;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
-.main {
+/* ============================================================
+   1. HERO POSTER (Yellow with Overlapping Strips & Violet Band)
+   ============================================================ */
+.heroPoster {
+  background-color: var(--dp-color-emphasis);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 8px 8px 0px #000000;
+  padding: 32px 32px 40px 32px;
   display: flex;
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
   flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+
+.posterHeader {
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  gap: 20px;
 }
 
-.intro {
+.wordmarkContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+  gap: 6px;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.wordmark {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-family: var(--dp-typography-face);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1;
+  padding: 12px 24px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  user-select: none;
+  align-self: flex-start;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.brandSubstrip {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-metadata);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: -0.02em;
+  padding: 4px 10px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  align-self: flex-start;
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
+.redArrowTile {
+  background-color: var(--dp-color-signal);
+  color: var(--dp-color-contrast);
+  font-size: 28px;
+  font-weight: var(--dp-typography-display-weight);
+  width: 56px;
+  height: 56px;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
+  justify-content: center;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  flex-shrink: 0;
+  transform: rotate(2deg);
+  text-decoration: none;
   cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.redArrowTile:hover {
+  transform: rotate(0deg) translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.redArrowTile:active {
+  transform: rotate(2deg) translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
+/* Statement strips */
+.statementStrips {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+.stripBlack {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-size: clamp(26px, 4vw, 44px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1.05;
+  padding: 8px 18px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+
+.stripCream {
+  background-color: var(--dp-color-ground);
+  color: var(--dp-color-ink);
+  font-size: clamp(22px, 3.5vw, 38px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1.05;
+  padding: 8px 18px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  align-self: flex-start;
+  text-transform: uppercase;
+  margin-left: 12px;
+}
+
+.stripWhite {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-size: clamp(20px, 3vw, 34px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1.05;
+  padding: 8px 18px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  align-self: flex-start;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
+
+/* Violet band beneath holding explanation and actions */
+.violetBand {
+  background-color: var(--dp-color-field);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 6px 6px 0px #000000;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.5;
+  max-width: 82ch;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: var(--dp-spacing-gap);
+  flex-wrap: wrap;
+}
+
+.startButton {
+  display: inline-block;
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  padding: 10px 28px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.startButton:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: #222222;
+}
+
+.startButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+.startButton:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: 3px;
+}
+
+.actionBadge {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 6px 12px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  text-transform: uppercase;
+}
+
+/* Ruled Ledger: Facts / Parameters */
+.factsLedger {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.factCard {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.factKey {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-label);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--dp-color-ink);
+  padding-bottom: 4px;
+}
+
+.factValue {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.35;
+}
+
+/* ============================================================
+   2. SECTION WRAPPER & HEADERS
+   ============================================================ */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: var(--dp-border-divider) solid var(--dp-color-ink);
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.sectionTitleStrip {
+  background-color: var(--dp-color-ink);
+  padding: 6px 16px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  align-self: flex-start;
+}
+
+.sectionTitleStripViolet {
+  background-color: var(--dp-color-field);
+  padding: 6px 16px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  align-self: flex-start;
+}
+
+.sectionTitle {
+  color: var(--dp-color-emphasis);
+  font-size: 20px;
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  text-transform: uppercase;
+}
+
+.sectionTitleStripViolet .sectionTitle {
+  color: var(--dp-color-ink);
+}
+
+.sectionAnnotation {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   3. NUMBERED PAPER STEPS (How It Works)
+   ============================================================ */
+.stepsList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.stepItem {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stepNumberBadge {
+  background-color: var(--dp-color-emphasis);
+  color: var(--dp-color-ink);
+  font-size: 20px;
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: -0.05em;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stepTitle {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-display-weight);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.stepDesc {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.45;
+}
+
+/* ============================================================
+   4. FAQ (Ruled Ledger Disclosures)
+   ============================================================ */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItem {
+  background-color: var(--dp-color-contrast);
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: 4px 4px 0px #000000;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.faqItem[open] {
+  background-color: #fffdec;
+}
+
+.faqSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  list-style: none;
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-emphasis-weight);
+}
+
+.faqSummary::-webkit-details-marker {
+  display: none;
+}
+
+.faqSummary:hover {
+  background-color: var(--dp-color-ground);
+}
+
+.faqSummary:focus-visible {
+  outline: 3px solid var(--dp-color-ink);
+  outline-offset: -3px;
+}
+
+.faqQuestion {
+  color: var(--dp-color-ink);
+}
+
+.faqIconBox {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-size: 18px;
+  font-weight: var(--dp-typography-display-weight);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--dp-color-ink);
+  box-shadow: 2px 2px 0px #000000;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.faqItem[open] .faqIconBox {
+  background-color: var(--dp-color-emphasis);
+}
+
+.faqAnswer {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-reading);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.55;
+  padding: 0 20px 20px 20px;
+  border-top: 2px dashed #000000;
+  margin-top: 4px;
+  padding-top: 14px;
+}
+
+/* ============================================================
+   5. CLOSING POSTER ON RED FIELD
+   ============================================================ */
+.closingField {
+  background-color: var(--dp-color-signal);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 8px 8px 0px #000000;
+  padding: 36px 32px;
+}
+
+.closingPoster {
+  background-color: var(--dp-color-emphasis);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 6px 6px 0px #000000;
+  padding: 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.closingHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.closingEyebrow {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-size: var(--dp-typography-label);
+  font-weight: var(--dp-typography-display-weight);
+  padding: 4px 10px;
+  align-self: flex-start;
+  letter-spacing: 0.05em;
+}
+
+.closingTitle {
+  color: var(--dp-color-ink);
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: var(--dp-typography-display-tracking);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.closingDesc {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.5;
+  max-width: 75ch;
+}
+
+.closingAction {
+  margin-top: 8px;
+}
+
+.closingBtn {
+  display: inline-block;
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-contrast);
+  font-size: 18px;
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: -0.02em;
+  padding: 12px 28px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-btn);
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.closingBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--dp-shadow-btn-hover);
+  background-color: #222222;
+  color: var(--dp-color-emphasis);
+}
+
+.closingBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--dp-shadow-btn-active);
+}
+
+/* ============================================================
+   6. GROUPED FOOTER
+   ============================================================ */
+.footer {
+  border-top: var(--dp-border-panel) solid var(--dp-color-ink);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footerGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footerBrand {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  padding: 4px 10px;
+  align-self: flex-start;
+}
+
+.footerNote {
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-metadata);
+  font-weight: var(--dp-typography-reading-weight);
+}
+
+.footerNav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footerLink {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: var(--dp-typography-small);
+  padding: 6px 14px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+  text-transform: uppercase;
+  transition: transform var(--dp-motion-interaction), box-shadow var(--dp-motion-interaction);
+}
+
+.footerLink:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #000000;
+  background-color: var(--dp-color-emphasis);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (1050px and 720px)
+   ============================================================ */
+@media (max-width: 1050px) {
+  .heroPoster {
+    padding: 24px;
+  }
+  .factsLedger {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stepsList {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+@media (max-width: 720px) {
+  .container {
+    padding: 16px;
+    gap: 32px;
   }
-
-  .intro {
-    gap: 16px;
+  .heroPoster {
+    padding: 18px 16px;
   }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+  .stripCream,
+  .stripWhite {
+    margin-left: 0;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .factsLedger {
+    grid-template-columns: 1fr;
   }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .stepsList {
+    grid-template-columns: 1fr;
   }
-}
-
-.code {
-  font-family: var(--font-geist-mono);
-  font-size: 0.9em;
-  background: color-mix(in srgb, currentColor 8%, transparent);
-  padding: 0.1em 0.4em;
-  border-radius: 6px;
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

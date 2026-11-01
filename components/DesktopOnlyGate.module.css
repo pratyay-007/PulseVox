@@ -1,0 +1,93 @@
+.gate {
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--dp-color-ground);
+  color: var(--dp-color-ink);
+  font-family: var(--dp-typography-face);
+  padding: 48px 24px;
+}
+
+.content {
+  max-width: 640px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--dp-spacing-gap-compact);
+  background-color: var(--dp-color-emphasis);
+  border: var(--dp-border-panel) solid var(--dp-color-ink);
+  box-shadow: 8px 8px 0px #000000;
+  padding: 32px 28px;
+  position: relative;
+}
+
+.prompt {
+  background-color: var(--dp-color-ink);
+  color: var(--dp-color-emphasis);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-display-weight);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  align-self: flex-start;
+  border: 2px solid var(--dp-color-ink);
+}
+
+.message {
+  color: var(--dp-color-ink);
+  font-weight: var(--dp-typography-display-weight);
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: var(--dp-typography-display-tracking);
+  text-transform: uppercase;
+}
+
+.submessage {
+  background-color: var(--dp-color-contrast);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-body);
+  font-weight: var(--dp-typography-reading-weight);
+  line-height: 1.5;
+  padding: 16px;
+  border: var(--dp-border-divider) solid var(--dp-color-ink);
+  box-shadow: var(--dp-shadow-card);
+}
+
+.widenHint {
+  background-color: var(--dp-color-field);
+  color: var(--dp-color-ink);
+  font-size: var(--dp-typography-small);
+  font-weight: var(--dp-typography-emphasis-weight);
+  padding: 10px 14px;
+  border: var(--dp-border-annotation) solid var(--dp-color-ink);
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.appContainer {
+  display: block;
+  min-height: 100vh;
+}
+
+/* Below 1024px: CSS-first gate display, no flash on phones */
+@media (max-width: 1023px) {
+  .gate {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .appContainer {
+    display: none !important;
+  }
+}
+
+/* Device blocked via JS detection (e.g. tablet with width >= 1024px) */
+.deviceBlocked .gate {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.deviceBlocked .appContainer {
+  display: none !important;
+}
